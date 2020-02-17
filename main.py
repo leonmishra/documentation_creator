@@ -6,14 +6,15 @@ from lib.DocumentationWriter import DocumentationWriter as documentationWriter
 def getVariableDetails():
     with open('/home/muvi/PycharmProjects/documentation_creater/input/temp.json') as jsonFile:
         varDetails = json.load(jsonFile)
-        return  varDetails;
+        return varDetails;
+
 
 def init():
     # excelData = pd.read_excel("/home/muvi/PycharmProjects/documentation_creater/input/billing_service.xlsx");
     excelData = pd.read_excel("/home/muvi/PycharmProjects/documentation_creater/input/temp _sheet.xlsx",
                               sheet_name="billing");
 
-    #return getVariableDetails();
+    # return getVariableDetails();
     for i in excelData.index:
         docWriter = documentationWriter()
 
