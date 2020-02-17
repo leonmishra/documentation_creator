@@ -2,7 +2,7 @@ from .DocumentationTemplate import DocumentationTemplate as documentationTemplat
 
 
 class DocumentationWriter():
-    __outputFile = "/home/muvi/PycharmProjects/documentation_creater/output/documentation.php";
+    __outputFile = "/home/muvi/PycharmProjects/documentation_creator/output/documentation.php";
 
     __template = """
             /**

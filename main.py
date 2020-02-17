@@ -4,14 +4,14 @@ from lib.DocumentationWriter import DocumentationWriter as documentationWriter
 
 
 def getVariableDetails():
-    with open('/home/muvi/PycharmProjects/documentation_creater/input/temp.json') as jsonFile:
+    with open('/home/muvi/PycharmProjects/documentation_creator/input/temp.json') as jsonFile:
         varDetails = json.load(jsonFile)
         return varDetails;
 
 
 def init():
     # excelData = pd.read_excel("/home/muvi/PycharmProjects/documentation_creater/input/billing_service.xlsx");
-    excelData = pd.read_excel("/home/muvi/PycharmProjects/documentation_creater/input/temp _sheet.xlsx",
+    excelData = pd.read_excel("/home/muvi/PycharmProjects/documentation_creator/input/temp _sheet.xlsx",
                               sheet_name="billing");
 
     # return getVariableDetails();
